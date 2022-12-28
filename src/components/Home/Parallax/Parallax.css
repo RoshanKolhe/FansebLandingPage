@@ -1,0 +1,8 @@
+.section {
+  background-image: url("../../../images/parallax.jpg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 1px) auto;
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+/* font-family: 'Questrial', sans-serif; */
+
+.head_container{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 10px;
+}
+.head, .head1{
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 60px!important;
+    line-height: 60px!important;
+    letter-spacing: 0px!important;
+    color: #000;
+}
+.head1{
+    margin-left: 400px;
+}
+.Tabs{
+    display:flex;align-items:center;
+    padding: 0 50px;
+}
+.Tabs span {
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 40px!important;
+    line-height: 100%!important;
+    letter-spacing: 0px!important;
+    padding-right: 20px;
+    color: #1d1d1d;
+    
+}
+.Tabs span:hover{
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+.main_img img{
+
+    width: 100vw;
+    height: 573px;
+    
+}
+
+.content{
+    margin-top: 20px;
+    text-align: center;
+}
+.title{
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 15px!important;
+    line-height: 144%!important;
+    color: #c77f3c;
+    letter-spacing: 0px!important;
+    text-transform: uppercase!important;
+}
+.btn_group{
+    gap: 10px;
+    row-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px 0;
+}
+.btn{
+    background: rgba(199,127,60,.69);
+    border: 1px solid rgba(199,127,60,.02);
+    border-radius: 8px;
+    padding: 3px 5px;
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 15px!important;
+    line-height: 144%!important;
+    color: #fff!important;
+}
+.subtitle{
+    margin-bottom: 12px!important;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 15px!important;
+    line-height: 144%!important;
+    color: #111;
+}
+.btn_group1{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: center;
+}
+.btn_group1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 15px!important;
+    line-height: 18px!important;
+    letter-spacing: 0px!important;
+    height: 40px;
+
+    padding: 8px 20px;
+
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.btn_group1 span img{
+    width: 40px;
+    height: 40px;
+}
+
+.second_sec{
+    padding: 20px 40px;
+}
+.second_sec h2{
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 40px!important;
+    line-height: 100%!important;
+    letter-spacing: 0px!important;
+    color: #1d1d1d;
+}
+.image_sec{
+    grid-gap: 30px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    position: relative;
+    padding: 7px 0 14px;
+    
+    
+}
+
+.card img{
+    width: 198px;
+    height: 255px;
+}
+.sec_para{
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 13px!important;
+    line-height: 120%!important;
+    letter-spacing: 0px!important;
+    color: #1d1d1d;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.third_sec{
+    position: relative;
+    padding: 20px 0;
+}
+.bottom_content {
+    
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.bottom_content1{
+    
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.bottom_content,.bottom_content1 span {
+    font-family: Questrial!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 60px!important;
+    line-height: 60px!important;
+    letter-spacing: 0px!important;
+    color: #fff;
+}
+

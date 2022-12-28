@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Fonts-Gilroy;
+  src: url('../../../font/Fonts-Gilroy.ttf');
+}
+.footer-section {
+  padding: 80px 0;
+  /* border-top: 1px solid #1a1a1a; */
+  /* background-color: transparent; */
+  background:black;
+}
+.footer-section-title {
+  font-size: 42px;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  margin: 40px auto 0;
+  line-height: 1.5;
+  font-family: Fonts-Gilroy;
+}
+.footer-content {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto 0;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-item-title {
+  color: #adb4c7;
+  font-size: 18px;
+  text-align: center;
+}
+.footer-item-content {
+  color: #fff;
+  size: 24px;
+}
+.footer-item-content a {
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.onboard-hypd-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-bar {
+  margin: 120px auto 120px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
+.social-bar a svg {
+  color: #c5c5c5;
+  font-size: 2rem;
+}
+
+.copyright {
+  color: rgb(173, 180, 199);
+  margin: 0px auto;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 0px 16px;
+}

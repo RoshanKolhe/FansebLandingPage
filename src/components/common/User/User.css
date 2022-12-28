@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@400;500;700&family=Lato:wght@100;300;400;700&family=Nunito:wght@200;300;400;500&display=swap");
+
+
+.login_head {
+  color: #000000;
+  font-family: "Nunito", sans-serif;
+  font-size: 56px;
+  width: 100%;
+}
+
+.css-j5w0w9-MuiStepConnector-root{
+    visibility:hidden;
+}
+
+.css-95m0ql {
+  display:none !important;
+}
+        
+
+@media screen and (max-width:1200) {
+  Raw {
+    width:'100%' !important
+  }
+}

@@ -1,0 +1,24 @@
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root::before {
+    border-width: 0 !important;
+}
+.label_text{
+    font-size:20px!important;
+}
+
+.css-4ff9q7 {
+    width: 1.5em!important;
+    height: 1.5em!important;
+    color:"#266BF9" !important; 
+    
+}
+.css-4ff9q7.Mui-active{
+    color: rgb(48, 35, 35) !important;
+}
+
+.MuiInput-input{
+    font-weight: bold !important;
+    margin-left: -5px;
+}
+.profile_img{
+    border-radius:20px;
+}

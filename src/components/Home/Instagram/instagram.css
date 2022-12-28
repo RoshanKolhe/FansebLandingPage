@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Fonts-Gilroy;
+  src: url('../../../font/Fonts-Gilroy.ttf');
+}
+
+.instagram {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background-color: transparent; */
+  background:black;
+}
+.section-title1 {
+  /* margin-bottom: 45px; */
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+.section-title1 .title {
+  margin: 0;
+  font-size: 42px;
+  /* font-weight: 400; */
+  font-family: Fonts-Gilroy;
+  color: #fff;
+  line-height: 60px;
+}
+
+.screen-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.info-section-wrapper {
+  display: flex;
+  width: 50vw;
+  margin: 24px 0 0 0;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mobile-info-container {
+  padding-top: 62px !important;
+  height: calc(100vh - 62px);
+  width: 50%;
+  display: flex;
+  margin: 0 0;
+  align-items: center;
+}
+.mobile-info-container :first-of-type {
+  margin: 24px 0 0;
+}
+.title-animation.mobile-info {
+  opacity: 1;
+}
+
+.title-animation {
+  position: relative;
+  -webkit-animation: slide-in-data-v-24ae6f2a 0.8s linear;
+  animation: slide-in-data-v-24ae6f2a 0.8s linear;
+}
+
+.mobile-info {
+  text-align: left;
+  max-width: 542px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.index {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.mobile-info-name {
+  color: #fff;
+  font-family: Fonts-Gilroy;
+  font-size: 42px;
+}
+.mobile-info-description {
+  color: #adb4c7;
+  font-size: 24px;
+  font-family: Fonts-Gilroy;
+}
+
+.mock-screen {
+  margin: 24px auto;
+  height: calc(320vh + 24px);
+  width: 50vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.mock-screen .mobile {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15.5vh;
+  width: 40vh;
+  height: 75vh;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #242424;
+}
+.mobile-background {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 30px;
+  border: 10px solid #000;
+}
+.mobile-background img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.mock-screen-img {
+  opacity: 1;
+  transform: translateX(0);
+  border-radius:30px;
+
+}
+@media screen and (max-width:400px) {
+  .section-title1 {
+    /* margin-bottom: 45px; */
+    padding: 0px!important;
+    
+   
+  }
+  .section-title1 .title{
+    font-size:28px!important;
+    line-height:40px;
+  }
+}
