@@ -2,10 +2,10 @@ import {noConflict} from 'lodash';
 import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import Galaxy from '../../Galaxy/Galaxy';
-import one from '../../../images/1.png';
-import two from '../../../images/2.png';
-import three from '../../../images/3.png';
-import four from '../../../images/4.png';
+import one from '../../../images/1.jpeg';
+import two from '../../../images/2.jpeg';
+import three from '../../../images/3.jpeg';
+import four from '../../../images/4.jpeg';
 
 import './instagram.css';
 
