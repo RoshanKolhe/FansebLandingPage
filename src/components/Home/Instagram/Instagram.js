@@ -43,8 +43,7 @@ export const useScrollHandler = () => {
   };
   useEffect(() => {
     const body = document.querySelector('body');
-    console.log(body);
-    const onScroll = (event) => {
+    const onScroll = event => {
       const scrollCheck = body.scrollTop > 3000;
       console.log('scrollcheck', body.scrollTop);
       setScroll(body.scrollTop);
@@ -110,23 +109,46 @@ export default function Instagram() {
             <div className="mock-screen">
               <div className="mobile">
                 <div className="mobile-background">
-                  {scroll > 2500 && scroll < 4000 ? (
-                    <>
-                      <img src={one} className="mock-screen-img" alt="" />
-                    </>
-                  ) : scroll > 4201 && scroll < 4800 ? (
-                    <img src={two} className="mock-screen-img" alt="" />
-                  ) : scroll > 4801 && scroll < 5000 ? (
-                    <img
-                      src="/assets/images/whatsup1.jpeg"
-                      className="mock-screen-img"
-                      alt=""
-                    />
-                  ) : scroll > 5000 && scroll < 7000 ? (
-                    <img src={three} className="mock-screen-img" alt="" />
-                  ) : (
-                    <img src={four} className="mock-screen-img" alt="" />
-                  )}
+                  <img
+                    src={one}
+                    className="mock-screen-img"
+                    alt=""
+                    style={
+                      scroll > 2500 && scroll < 4100
+                        ? {display: 'block'}
+                        : {display: 'none'}
+                    }
+                  />
+                  <img
+                    src={two}
+                    className="mock-screen-img"
+                    alt=""
+                    style={
+                      scroll >= 4100 && scroll < 4701
+                        ? {display: 'block'}
+                        : {display: 'none'}
+                    }
+                  />
+                  <img
+                    src={three}
+                    className="mock-screen-img"
+                    alt=""
+                    style={
+                      scroll >= 4701 && scroll < 5100
+                        ? {display: 'block'}
+                        : {display: 'none'}
+                    }
+                  />
+                  <img
+                    src={four}
+                    className="mock-screen-img"
+                    alt=""
+                    style={
+                      scroll >= 5100
+                        ? {display: 'block'}
+                        : {display: 'none'}
+                    }
+                  />
                 </div>
               </div>
             </div>
