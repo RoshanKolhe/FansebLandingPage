@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Container, Row } from "react-bootstrap";
-import "./Counter.css";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
-import Galaxy from "../../Galaxy/Galaxy";
+import React, {useState} from 'react';
+import {Button, Container, Row} from 'react-bootstrap';
+import './Counter.css';
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+import Galaxy from '../../Galaxy/Galaxy';
 
 export default function Counter() {
   const [focus, setFocus] = useState(false);
@@ -27,11 +27,11 @@ export default function Counter() {
                     duration={2}
                     redraw={true}
                   >
-                    {({ countUpRef }) => (
+                    {({countUpRef}) => (
                       <div>
                         <span ref={countUpRef} />
                         <VisibilitySensor
-                          onChange={(isVisible) => {
+                          onChange={isVisible => {
                             if (isVisible) {
                               setFocus(true);
                             }
@@ -45,30 +45,30 @@ export default function Counter() {
                 </div>
                 <div className="secondary-text">
                   <p>
-                    {" "}
-                    creators are on the road to become{" "}
+                    {' '}
+                    creators are on the road to become{' '}
                     <span
                       style={{
-                        fontWeight: "600",
+                        fontWeight: '600',
                         background:
-                          "-webkit-linear-gradient(20deg, #0171ed 40%, #d001ff 50%)",
-                        webkitBackgroundClip: "text",
-                        webkitTextFillColor: "transparent",
+                          '-webkit-linear-gradient(20deg, #0171ed 40%, #d001ff 50%)',
+                        webkitBackgroundClip: 'text',
+                        webkitTextFillColor: 'transparent',
                       }}
                     >
-                      {" "}
+                      {' '}
                       creatorpreneurs
                     </span>
                   </p>
                   <p>
-                    don't just be a creator, be a{" "}
+                    don't just be a creator, be a{' '}
                     <span
                       style={{
-                        fontWeight: "600",
+                        fontWeight: '600',
                         background:
-                          "-webkit-linear-gradient(20deg, #0171ed 40%, #d001ff 50%)",
-                        webkitBackgroundClip: "text",
-                        webkitTextFillColor: "transparent",
+                          '-webkit-linear-gradient(20deg, #0171ed 40%, #d001ff 50%)',
+                        webkitBackgroundClip: 'text',
+                        webkitTextFillColor: 'transparent',
                       }}
                     >
                       creatorpreneur
@@ -78,7 +78,27 @@ export default function Counter() {
               </div>
             </div>
             <div className="bottom-dock">
-              <button className="btn btn-2">Join the Waitlist</button>
+              <a href=" https://app.fanseb.com/admin/influencer-register">
+                <Button
+                  variant="contained"
+                  className="btn-2"
+                  style={{
+                    marginRight: 20,
+                    width: 190,
+                    backgroundImage:
+                      'linear-gradient(90deg, #0171ed 0%, #d001ff 100%)',
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: '800',
+                      color: '#fff',
+                    }}
+                  >
+                    Join the Waitlist
+                  </span>
+                </Button>
+              </a>
             </div>
           </Row>
         </Container>

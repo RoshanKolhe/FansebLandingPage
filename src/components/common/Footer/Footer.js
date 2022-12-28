@@ -1,13 +1,13 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
   FaYoutube,
-} from "react-icons/fa";
-import Galaxy from "../../Galaxy/Galaxy";
+} from 'react-icons/fa';
+import Galaxy from '../../Galaxy/Galaxy';
 
 export default function Footer() {
   return (
@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="footer-item-title">email</div>
             <div
               className="footer-item-content"
-              style={{ color: "rgb(54, 137, 251)" }}
+              style={{color: 'rgb(54, 137, 251)'}}
             >
               <a href="mailto:creators@domain.in">fansebbhartiya@gmail.com</a>
             </div>
@@ -30,22 +30,19 @@ export default function Footer() {
             <div className="footer-item-title">are you a brand?</div>
             <div
               className="footer-item-content"
-              style={{ color: "rgb(54, 137, 251)", textAlign: "center" }}
+              style={{color: 'rgb(54, 137, 251)', textAlign: 'center'}}
             >
               <button
                 className="btn btn-2"
                 style={{
                   background:
-                    "linear-gradient(90deg, #0171ed 0%, #d001ff 100%)",
+                    'linear-gradient(90deg, #0171ed 0%, #d001ff 100%)',
                 }}
               >
-                {" "}
-                <a
-                  href="http://localhost:3002/register"
-                >
+                {' '}
+                <a href="https://app.fanseb.com/admin/register">
                   Join Fanseb
-                </a>
-                {" "}
+                </a>{' '}
               </button>
             </div>
           </div>
@@ -53,7 +50,7 @@ export default function Footer() {
             <div className="footer-item-title">website</div>
             <div
               className="footer-item-content"
-              style={{ color: "rgb(54, 137, 251)" }}
+              style={{color: 'rgb(54, 137, 251)'}}
             >
               <a href="https://www.fanseb.com/" target="_blank">
                 https://www.fanseb.com/
