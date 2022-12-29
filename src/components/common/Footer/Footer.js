@@ -8,6 +8,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import Galaxy from '../../Galaxy/Galaxy';
+import {Button, Grid, Typography} from '@mui/material';
 
 export default function Footer() {
   return (
@@ -16,48 +17,112 @@ export default function Footer() {
         <div className="footer-section-title">
           got questions? we’re happy to answer every single one of them.
         </div>
-        <div className="footer-content">
-          <div className="footer-items">
-            <div className="footer-item-title">email</div>
-            <div
-              className="footer-item-content"
-              style={{color: 'rgb(54, 137, 251)'}}
-            >
-              <a href="mailto:creators@domain.in">fansebbhartiya@gmail.com</a>
-            </div>
-          </div>
-          <div className="footer-items onboard-hypd-btn">
-            <div className="footer-item-title">are you a brand?</div>
-            <div
-              className="footer-item-content"
-              style={{color: 'rgb(54, 137, 251)', textAlign: 'center'}}
-            >
-              <button
-                className="btn btn-2"
+        <Grid container direction="row">
+          <Grid item xs={12} sm={4} marginTop={3}>
+            <Grid container direction="column">
+              <Grid item xs={12} sm={4}>
+                <Typography
+                  variant="h6"
+                  style={{
+                    color: '#adb4c7',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    fontFamily:'inherit'
+                  }}
+                >
+                  email
+                </Typography>
+                <Typography
+                  variant="h6"
+                  style={{
+                    color: 'rgb(54, 137, 251)',
+                    display: 'flex',
+                    fontFamily:'inherit',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <a href="mailto:creators@domain.in">
+                    fansebbhartiya@gmail.com
+                  </a>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={4} marginTop={3}>
+            <Grid container direction="column">
+              <Grid
+                item
+                xs={12}
+                sm={4}
                 style={{
-                  background:
-                    'linear-gradient(90deg, #0171ed 0%, #d001ff 100%)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
                 }}
               >
-                {' '}
-                <a href="https://app.fanseb.com/admin/register">
-                  Join Fanseb
-                </a>{' '}
-              </button>
-            </div>
-          </div>
-          <div className="footer-items">
-            <div className="footer-item-title">website</div>
-            <div
-              className="footer-item-content"
-              style={{color: 'rgb(54, 137, 251)'}}
-            >
-              <a href="https://www.fanseb.com/" target="_blank">
-                https://www.fanseb.com/
-              </a>
-            </div>
-          </div>
-        </div>
+                <Typography
+                  variant="h6"
+                  style={{
+                    color: '#adb4c7',
+                    fontFamily:'inherit'
+                  }}
+                >
+                  are you a brand?
+                </Typography>
+                <button
+                  className="btn btn-2"
+                  style={{
+                    marginTop:'25px',
+                    background:
+                      'linear-gradient(90deg, #0171ed 0%, #d001ff 100%)',
+                  }}
+                >
+                  <a
+                    href="https://app.fanseb.com/admin/register"
+                    style={{
+                      color: '#fff',
+                      display: 'flex',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    Join Fanseb
+                  </a>
+                </button>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={4} marginTop={3}>
+            <Grid container direction="column">
+              <Grid item xs={12} sm={4}>
+                <Typography
+                  variant="h6"
+                  style={{
+                    color: '#adb4c7',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    fontFamily:'inherit'
+
+                  }}
+                >
+                  website
+                </Typography>
+                <Typography
+                  variant="h6"
+                  style={{
+                    color: 'rgb(54, 137, 251)',
+                    display: 'flex',
+                    fontFamily:'inherit',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <a href="https://www.fanseb.com/" target="_blank">
+                    https://www.fanseb.com/
+                  </a>
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
         <div className="social-bar">
           <a href="https://www.facebook.com/fanseb.fanseb" target="_blank">
             <FaFacebookF title="Facebook" />
