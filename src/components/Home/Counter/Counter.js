@@ -1,12 +1,22 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button, Container, Row} from 'react-bootstrap';
 import './Counter.css';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import Galaxy from '../../Galaxy/Galaxy';
+import timer from '../../../images/timer.png';
 
 export default function Counter() {
+  const [innerWidth, setInnerWidth] = useState({innerWidth: window.innerWidth});
   const [focus, setFocus] = useState(false);
+
+  const resize = () => {
+    setInnerWidth({innerWidth: window.innerWidth});
+  };
+  useEffect(() => {
+    window.addEventListener('resize', resize);
+    resize();
+  }, []);
   return (
     <>
       <section className="counter-section ">
@@ -14,8 +24,14 @@ export default function Counter() {
           <Row>
             <div className="creator-counter">
               <div className="text-content">
-                <img src="https://www.hypd.store/img/timer.5d0aaf0c.png" />
-                <div className="creator-count">
+                <img src={timer} alt='timer'/>
+                <div
+                  style={{
+                    fontSize: innerWidth.innerWidth > 600 ? '128px' : '64px',
+                    fontWeight: '600',
+                    paddingBottom: '5rem',
+                  }}
+                >
                   <CountUp
                     separator=","
                     start={focus ? 0 : null}
@@ -80,6 +96,7 @@ export default function Counter() {
                   className="btn-2"
                   style={{
                     marginRight: 20,
+                    marginTop:'25px',
                     width: 190,
                     backgroundImage:
                       'linear-gradient(90deg, #0171ed 0%, #d001ff 100%)',

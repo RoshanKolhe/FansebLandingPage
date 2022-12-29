@@ -60,10 +60,6 @@ export default function Instagram() {
   const scroll = useScrollHandler();
 
   const [innerWidth, setInnerWidth] = useState({innerWidth: window.innerWidth});
-  // window.onscroll = function (event) {
-  //   console.log(event);
-  // };
-  console.log(innerWidth);
   const resize = () => {
     setInnerWidth({innerWidth: window.innerWidth});
   };
