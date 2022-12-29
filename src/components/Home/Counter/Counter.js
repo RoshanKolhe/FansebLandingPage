@@ -13,13 +13,9 @@ export default function Counter() {
         <Container>
           <Row>
             <div className="creator-counter">
-              {/* {[...Array(35)].map((item) => (
-                <div className="grid-matrix-div"></div>
-              ))} */}
               <div className="text-content">
                 <img src="https://www.hypd.store/img/timer.5d0aaf0c.png" />
                 <div className="creator-count">
-                  {/* <CountUp separator="," delay={2} end={51000} /> */}
                   <CountUp
                     separator=","
                     start={focus ? 0 : null}

@@ -3,6 +3,12 @@ import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import {
+  createTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from '@mui/material/styles';
+
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import Typography from '@mui/material/Typography';
 import HandshakeIcon from '@mui/icons-material/Handshake';
@@ -30,12 +36,17 @@ const useStyles = makeStyles(theme => ({
 }));
 const Services = () => {
   document.body.style = 'background: black;';
+
+  let theme = createTheme();
+  theme = responsiveFontSizes(theme);
   const classes = useStyles();
   return (
     <>
       <Grid marginX={10}>
         <Grid container justifyContent="center" mt={5}>
-          <Typography color="#fff" fontSize='30px'>OUR SERVICES</Typography>
+          <Typography color="#fff" fontSize="30px">
+            OUR SERVICES
+          </Typography>
         </Grid>
         <Grid
           container
@@ -45,7 +56,7 @@ const Services = () => {
           alignItems="center"
           marginY={8}
         >
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <Grid container direction="row">
               <Grid className={classes.right} xs={3}>
                 <Avatar className={classes.serviceIcon}>
@@ -65,7 +76,7 @@ const Services = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <Grid container direction="row">
               <Grid className={classes.right} xs={3}>
                 <Avatar className={classes.serviceIcon}>
@@ -86,7 +97,7 @@ const Services = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <Grid container direction="row">
               <Grid className={classes.right} xs={3}>
                 <Avatar className={classes.serviceIcon}>
@@ -115,7 +126,7 @@ const Services = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <Grid container direction="row">
               <Grid className={classes.right} xs={3}>
                 <Avatar className={classes.serviceIcon}>
@@ -136,7 +147,7 @@ const Services = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <Grid container direction="row">
               <Grid className={classes.right} xs={3}>
                 <Avatar className={classes.serviceIcon}>
@@ -156,7 +167,7 @@ const Services = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <Grid container direction="row">
               <Grid className={classes.right} xs={3}>
                 <Avatar className={classes.serviceIcon}>
@@ -180,18 +191,22 @@ const Services = () => {
         </Grid>
       </Grid>
       <Grid marginX={10}>
-        <Typography variant="h3" marginY={5} color="#E044AD">
-          NO CANNED PACKAGES HERE
-        </Typography>
-        <Typography width="75%" variant="h2" color="#fff">
-          Influencer campaigns designed around the objectives and KPIs of each
-          client.
-        </Typography>
+        <ThemeProvider theme={theme}>
+          <Typography variant="h3" marginY={5} color="#E044AD">
+            NO CANNED PACKAGES HERE
+          </Typography>
+          <Typography width="75%" variant="h2" color="#fff">
+            Influencer campaigns designed around the objectives and KPIs of each
+            client.
+          </Typography>
+        </ThemeProvider>
         <Grid container direction="row" marginTop={3}>
           <Grid item>
-            <Typography variant="h5" color="#fff">
-              Take a look into our process
-            </Typography>
+            <ThemeProvider theme={theme}>
+              <Typography variant="h5" color="#fff">
+                Take a look into our process
+              </Typography>
+            </ThemeProvider>
           </Grid>
           <Grid marginLeft={2} color="#DB4783">
             <EastRoundedIcon />

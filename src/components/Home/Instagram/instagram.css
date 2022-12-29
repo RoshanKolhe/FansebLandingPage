@@ -99,7 +99,19 @@
   display: flex;
   justify-content: center;
 }
-
+.mockup {
+  max-width: 300px;
+  padding: 0; 
+  margin: 8rem auto; 
+  border: 11px solid #fff; 
+  border-radius: 42px; 
+  overflow: hidden; 
+  box-shadow: -10px 11px 40px rgba(0,0,0,.2); 
+}
+.mockup img {
+  display: block; 
+  max-width: 100%;
+}
 .mock-screen .mobile {
   position: -webkit-sticky;
   position: sticky;
@@ -175,3 +187,8 @@
     line-height:40px;
   }
 }
+
+
+
+
+
