@@ -125,7 +125,7 @@ export default function Instagram() {
                         className="mock-screen-img"
                         alt=""
                         style={
-                          scroll > 2500 && scroll < 4100
+                          scroll > 2500 && scroll < 4000
                             ? {display: 'block'}
                             : {display: 'none'}
                         }
@@ -135,7 +135,7 @@ export default function Instagram() {
                         className="mock-screen-img"
                         alt=""
                         style={
-                          scroll >= 4100 && scroll < 4701
+                          scroll >= 4000 && scroll < 4501
                             ? {display: 'block'}
                             : {display: 'none'}
                         }
@@ -145,7 +145,7 @@ export default function Instagram() {
                         className="mock-screen-img"
                         alt=""
                         style={
-                          scroll >= 4701 && scroll < 5100
+                          scroll >= 4501 && scroll < 5100
                             ? {display: 'block'}
                             : {display: 'none'}
                         }

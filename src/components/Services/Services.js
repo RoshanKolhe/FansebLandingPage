@@ -11,6 +11,7 @@ import {
   responsiveFontSizes,
   ThemeProvider,
 } from '@mui/material/styles';
+import servicePageImage from '../../images/servicePageImage.png';
 
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import Typography from '@mui/material/Typography';
@@ -83,7 +84,6 @@ const Services = () => {
           </Typography>
         </Grid>
       </Box>
-
       <Grid marginX={10}>
         <Grid container justifyContent="center" mt={5}>
           <Typography color="#fff" fontSize="30px">
@@ -290,7 +290,46 @@ const Services = () => {
           </Typography>
         </Grid>
       </Box>
-      <Grid marginX={10}>
+
+      <Box style={{height: '70vh'}} margin={10}>
+        <Grid
+          container
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          style={{
+            height: '100%',
+          }}
+        >
+          <Grid item xs={12} sm={12} md={6}>
+            <Grid container direction="column">
+              <Typography
+                variant="h4"
+                sx={{typography: {sm: 'h6', xs: 'h5', md: 'h4'}}}
+                style={{
+                  fontWeight: '600',
+                  color: '#E044AD',
+                }}
+              >
+                WE DESIGN EXPERIENCE, NOT ADS
+              </Typography>
+              <Typography variant="h5" color="#fff" width="80%" letterSpacing={4}>
+                We partner with our clients to deliver fully-managed,
+                innovative, human-to-human influencer marketing campaigns.
+              </Typography>
+            </Grid>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={6}>
+            <img
+              src={servicePageImage}
+              alt="service"
+              style={{height: '100%', width: '100%'}}
+            />
+          </Grid>
+        </Grid>
+      </Box>
+      <Grid margin={10}>
         <ThemeProvider theme={theme}>
           <Typography variant="h3" marginY={5} marginTop={15} color="#E044AD">
             NO CANNED PACKAGES HERE
