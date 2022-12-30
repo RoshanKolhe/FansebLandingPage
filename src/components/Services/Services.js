@@ -1,8 +1,11 @@
 import * as React from 'react';
 import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import './Services.css';
+
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded';
 import {
   createTheme,
   responsiveFontSizes,
@@ -39,9 +42,48 @@ const Services = () => {
 
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
+
   const classes = useStyles();
   return (
     <>
+      <Box height="70vh">
+        <Grid
+          container
+          direction="column"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          style={{
+            height: '100%',
+          }}
+        >
+          <Typography
+            variant="h1"
+            sx={{typography: {sm: 'h3', xs: 'h4', md: 'h1'}}}
+            style={{
+              fontWeight: '600',
+              background:
+                '-webkit-linear-gradient(20deg, #0171ed 40%, #d001ff 50%)',
+              webkitBackgroundClip: 'text',
+              webkitTextFillColor: 'transparent',
+              textAlign: 'center',
+            }}
+          >
+            LETUSINFLUENCE
+          </Typography>
+          <Typography
+            color="#fff"
+            sx={{typography: {sm: 'body1', xs: 'body2'}}}
+            style={{
+              textAlign: 'center',
+            }}
+          >
+            An influencer marketing agency serving the world's most respected
+            brands since 2019.
+          </Typography>
+        </Grid>
+      </Box>
+
       <Grid marginX={10}>
         <Grid container justifyContent="center" mt={5}>
           <Typography color="#fff" fontSize="30px">
@@ -190,9 +232,67 @@ const Services = () => {
           </Grid>
         </Grid>
       </Grid>
+      <Box height="70vh" marginTop={7}>
+        <Grid
+          container
+          direction="column"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          style={{
+            height: '100%',
+          }}
+        >
+          <Typography
+            variant="h1"
+            sx={{typography: {sm: 'h3', xs: 'h4', md: 'h1'}}}
+            style={{
+              fontWeight: '600',
+              textAlign: 'center',
+              letterSpacing: '20px',
+            }}
+          >
+            BRANDS
+          </Typography>
+          <Typography
+            color="#fff"
+            sx={{typography: {sm: 'h7', xs: 'h6'}}}
+            style={{
+              textAlign: 'center',
+              marginTop: '20px',
+            }}
+          >
+            Where brands and iconic people meet
+          </Typography>
+          <Typography
+            color="#fff"
+            sx={{typography: {sm: 'body1', xs: 'body2'}}}
+            style={{
+              textAlign: 'center',
+              marginTop: '20px',
+              width: '50%',
+            }}
+          >
+            The future of communication and marketing is people-driven - no
+            matter how many followers you have. It's all about a genuine
+            interest in your brand and religility towards your network that will
+            drive engagement, awareness, and sales.
+          </Typography>
+          <Typography
+            color="#fff"
+            sx={{typography: {sm: 'h7', xs: 'h6'}}}
+            style={{
+              textAlign: 'center',
+              marginTop: '30px',
+            }}
+          >
+            Everyone's influence counts
+          </Typography>
+        </Grid>
+      </Box>
       <Grid marginX={10}>
         <ThemeProvider theme={theme}>
-          <Typography variant="h3" marginY={5} color="#E044AD">
+          <Typography variant="h3" marginY={5} marginTop={15} color="#E044AD">
             NO CANNED PACKAGES HERE
           </Typography>
           <Typography width="75%" variant="h2" color="#fff">
@@ -212,9 +312,76 @@ const Services = () => {
             <EastRoundedIcon />
           </Grid>
         </Grid>
-        <Grid container direction="row" marginTop={3}>
-          <Grid container direction="column">
-            <ContactEmergencyRoundedIcon />
+        <Grid container spacing={4} direction="row" marginTop={3}>
+          <Grid item xs={12} sm={4} spacing={2}>
+            <Grid container direction="column">
+              <ContactEmergencyRoundedIcon
+                sx={{color: '#8C384E', fontSize: '50px'}}
+              />
+              <Typography variant="h5" color="#fff">
+                Hands-On
+              </Typography>
+              <Typography variant="h5" color="#fff">
+                Talent Curation Process
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#fff"
+                letterSpacing={2.5}
+                style={{marginTop: '20px'}}
+              >
+                An influencer marketing agency that sources creators based on
+                benchmark metrics - following an extensive, manual selection and
+                validation process that extends beyond the parameters of popular
+                databases.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={4} spacing={2}>
+            <Grid container direction="column">
+              <SpeedRoundedIcon sx={{color: '#8C384E', fontSize: '50px'}} />
+              <Typography variant="h5" color="#fff">
+                White Glove
+              </Typography>
+              <Typography variant="h5" color="#fff">
+                Campaign Execution
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#fff"
+                letterSpacing={2.5}
+                style={{marginTop: '20px'}}
+              >
+                Fully engaged from Day 1 to deliver a seamless experience
+                between creators and clients throughout the duration of each
+                project. An influencer marketing agency committed to serving as
+                a direct extension of your brand.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Grid container direction="column">
+              <EmojiEventsRoundedIcon
+                sx={{color: '#8C384E', fontSize: '50px'}}
+              />
+              <Typography variant="h5" color="#fff">
+                Innovative
+              </Typography>
+              <Typography variant="h5" color="#fff">
+                Award-Winning Strategies
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#fff"
+                letterSpacing={2.5}
+                style={{marginTop: '20px'}}
+              >
+                Designing trend-worthy concepts that help audiences discover
+                brands, while building emotional connections that drive consumer
+                behavior. Think of us as an influencer marketing agency with an
+                experiential attitude.
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
