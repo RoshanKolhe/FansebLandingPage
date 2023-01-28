@@ -10,6 +10,7 @@ import Influencer from './Influencer/Influencer';
 import Instagram from './Instagram/Instagram';
 import Counter from './Counter/Counter';
 import Galaxy from '../Galaxy/Galaxy';
+import PopoutImages from './PopoutImages/PopoutImages';
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
       <Influencer />
       <RangeSlider />
       <MuchMore />
+      {/* <PopoutImages /> */}
       <Instagram />
       <Counter />
       <Footer />
