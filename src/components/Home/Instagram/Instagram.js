@@ -15,19 +15,19 @@ const data = [
     title: '01',
     subtitle: 'create',
     text: 'sign up & create your own store in under 30 seconds',
-    img: one,
+    img: two,
   },
   {
     title: '02',
     subtitle: 'curate',
     text: 'curate collections, add your favourite products or simply make your content shop-able',
-    img: two,
+    img: three,
   },
   {
     title: '03',
     subtitle: 'share',
     text: 'share your store link, collections & your product recommendations across all your social media channels.',
-    img: three,
+    img: one,
   },
   {
     title: '04',
@@ -75,7 +75,7 @@ export default function Instagram() {
           <Row>
             <Col md={12}>
               <div className="section-title1">
-                <h2 className="title">
+                <h2 className="title" style={{color: '#fff'}}>
                   as easy as setting up an instagram account. only {''}
                   <span
                     style={{
@@ -121,7 +121,7 @@ export default function Instagram() {
                   <div className="mobile">
                     <div className="mobile-background">
                       <img
-                        src={one}
+                        src={two}
                         className="mock-screen-img"
                         alt=""
                         style={
@@ -131,7 +131,7 @@ export default function Instagram() {
                         }
                       />
                       <img
-                        src={two}
+                        src={three}
                         className="mock-screen-img"
                         alt=""
                         style={
@@ -141,7 +141,7 @@ export default function Instagram() {
                         }
                       />
                       <img
-                        src={three}
+                        src={one}
                         className="mock-screen-img"
                         alt=""
                         style={
@@ -183,7 +183,9 @@ export default function Instagram() {
                           >
                             {datas.title}
                           </div>
-                          <div className="mobile-info-name">{datas.subtitle}</div>
+                          <div className="mobile-info-name">
+                            {datas.subtitle}
+                          </div>
                           <div
                             className="mobile-info-description"
                             style={{textAlign: 'center'}}
