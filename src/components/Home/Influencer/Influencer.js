@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
 import './influencer.css';
+// import avatarImg from '../../../../src/images/EASY-PEASY.png';
 import avatarImg from '../../../../src/images/easypeasy.gif';
 import Galaxy from '../../Galaxy/Galaxy';
 

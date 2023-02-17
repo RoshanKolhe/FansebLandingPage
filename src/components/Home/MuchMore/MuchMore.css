@@ -65,7 +65,7 @@
 .circle {
   width: 220px;
   height: 220px;
-  /* background: rgb(151, 86, 215); */
+  background: rgb(151, 86, 215);
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;
   border-radius: 370px;
