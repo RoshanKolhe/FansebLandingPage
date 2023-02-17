@@ -34,7 +34,7 @@ export default function MuchMore() {
               </Col>
               <div className="icon-grid animate__zoomIn wow animate__animated">
                 <div className="avatar-card avatar-1">
-                  <div class="circle">
+                  <div class="circle" style={{background: '#5E73AF'}}>
                     {scroll >= 1900 ? (
                       <img
                         src="https://d2pas86kykpvmq.cloudfront.net/images/humans-3.0/together_with_digital_icons.png"
@@ -67,7 +67,7 @@ export default function MuchMore() {
                   </p>
                 </div>{' '}
                 <div className="avatar-card avatar-2 animate__zoomIn wow animate__animated">
-                  <div class="circle">
+                  <div class="circle" style={{background: '#E7E198'}}>
                     {scroll >= 1900 ? (
                       <img
                         src="https://cdn3d.iconscout.com/3d/premium/thumb/businessman-working-on-laptop-while-seating-on-sofa-5622801-4694800.png"
@@ -95,7 +95,7 @@ export default function MuchMore() {
                   </p>
                 </div>
                 <div className="avatar-card avatar-3 pl-3 animate__zoomIn wow animate__animated">
-                  <div class="circle">
+                  <div class="circle" style={{background: '#F5BEA5'}}>
                     {scroll >= 2333 ? (
                       <img
                         src="https://ouch-cdn2.icons8.com/w1_iq548AipAMAEcCVq8zsTqFbNY7oEnx3cLpHtj6so/rs:fit:256:297/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDkz/L2MxYzcxMDk4LTE5/ZWEtNDNjMS1hMzRk/LWFlYzk4ODE1ZWQw/Zi5wbmc.png"
@@ -126,7 +126,7 @@ export default function MuchMore() {
                   </p>
                 </div>{' '}
                 <div className="avatar-card avatar-4 animate__zoomIn wow animate__animated">
-                  <div class="circle">
+                  <div class="circle" style={{background: '#AFE5FD'}}>
                     {scroll >= 2333 ? (
                       <img
                         src="https://cdn3d.iconscout.com/3d/premium/thumb/male-video-blogger-5571171-4659673.png"
