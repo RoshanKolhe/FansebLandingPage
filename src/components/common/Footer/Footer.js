@@ -124,7 +124,7 @@ export default function Footer() {
           </Grid>
         </Grid>
         <div className="social-bar">
-          <a href="https://www.facebook.com/fanseb.fanseb" target="_blank">
+          <a href="https://www.facebook.com/fanseb.store/" target="_blank">
             <FaFacebookF title="Facebook" />
           </a>
           <a
@@ -134,7 +134,7 @@ export default function Footer() {
             <FaTwitter title="Twitter" />
           </a>
           <a
-            href="https://www.linkedin.com/in/fanseb-india-0788b5205"
+            href="https://www.linkedin.com/in/fanseb-influencer-marketing-0788b5205/"
             target="_blank"
           >
             <FaLinkedinIn title="LinkedIn" />
