@@ -42,7 +42,7 @@ export default function Footer() {
                   }}
                 >
                   <a href="mailto:creators@domain.in">
-                    fansebbhartiya@gmail.com
+                    connect@fanseb.com
                   </a>
                 </Typography>
               </Grid>
