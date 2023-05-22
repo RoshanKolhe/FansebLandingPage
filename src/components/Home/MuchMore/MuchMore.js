@@ -26,9 +26,9 @@ export default function MuchMore() {
                         webkitTextFillColor: 'transparent',
                       }}
                     >
-                      more
+                      treasure
                     </span>{' '}
-                    you get.
+                    you received.
                   </h2>
                 </div>
               </Col>
@@ -51,7 +51,7 @@ export default function MuchMore() {
                   </div>
 
                   <p>
-                    {' '}
+                    getting{' '}
                     <span
                       style={{
                         fontWeight: '600',
@@ -61,9 +61,9 @@ export default function MuchMore() {
                         webkitTextFillColor: 'transparent',
                       }}
                     >
-                      more
+                      treasure
                     </span>{' '}
-                    paid brand collabs
+                    by paid brand collabs
                   </p>
                 </div>{' '}
                 <div className="avatar-card avatar-2 animate__zoomIn wow animate__animated">
@@ -79,7 +79,7 @@ export default function MuchMore() {
                   </div>
 
                   <p>
-                    {' '}
+                    getting{' '}
                     <span
                       style={{
                         fontWeight: '600',
@@ -89,9 +89,9 @@ export default function MuchMore() {
                         webkitTextFillColor: 'transparent',
                       }}
                     >
-                      more
+                      treasure
                     </span>{' '}
-                    celebrity collabs
+                    by celebrity collabs
                   </p>
                 </div>
                 <div className="avatar-card avatar-3 pl-3 animate__zoomIn wow animate__animated">
@@ -110,7 +110,7 @@ export default function MuchMore() {
                   </div>
 
                   <p>
-                    refer friends for{' '}
+                    refer friends for more{' '}
                     <span
                       style={{
                         fontWeight: '600',
@@ -120,9 +120,8 @@ export default function MuchMore() {
                         webkitTextFillColor: 'transparent',
                       }}
                     >
-                      more
+                      treasure
                     </span>{' '}
-                    returns
                   </p>
                 </div>{' '}
                 <div className="avatar-card avatar-4 animate__zoomIn wow animate__animated">
@@ -138,7 +137,7 @@ export default function MuchMore() {
                   </div>
 
                   <p>
-                    launch your own brand &{' '}
+                    create your own brand & explore{' '}
                     <span
                       style={{
                         fontWeight: '600',
@@ -148,7 +147,7 @@ export default function MuchMore() {
                         webkitTextFillColor: 'transparent',
                       }}
                     >
-                      more
+                      treasure
                     </span>
                   </p>
                 </div>
